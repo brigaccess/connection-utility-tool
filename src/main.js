@@ -17,7 +17,8 @@ const EnvironmentChecker = require("./initial-checks/EnvironmentChecker");
 
 let win;
 let checker = EnvironmentChecker({
-    linux: './initial-checks/platform/linux-checks'
+    linux: './initial-checks/platform/linux-checks',
+    win32: './initial-checks/platform/win32-checks'
 }, ['wifi', 'firewall']);
 
 function allInterfaces() {

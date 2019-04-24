@@ -36,5 +36,8 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin()
-    ]
+    ],
+    externals: {
+        bindings: 'require("bindings")'
+    }
 };

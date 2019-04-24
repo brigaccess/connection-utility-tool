@@ -35,12 +35,13 @@ Or you may complete several steps to build and run by yourself.
 1. Install [Node.js](https://nodejs.org/en/download/) (tested with  8.11.4)
 for your system. The installer will guide you through all necessary steps
 and will also install [npm](https://docs.npmjs.com)
-2. Clone or download this project
-3. Download and install all of the project libraries and dependencies by
+2. To build this project, you also will need Visual Studio 2017 (VS2019 is not supported now). If you don't want to install full version of VS2017, follow [this guide on building native dependencies](https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#compiling-native-addon-modules)
+3. Clone or download this project
+4. Download and install all of the project libraries and dependencies by
 running the following commands (using any shell).
     1. run `npm install` in "./" of the project.
-4. In the directory "./" build the bundle by `npm run dev` command
-5. Now you can run or build binary files of **ZSCU**:
+5. In the directory "./" build the bundle by `npm run dev` command
+6. Now you can run or build binary files of **ZSCU**:
     1. For running this application you need enter `npm run electron`
 command in "./"
     2. You can build binary files only from the same platform type as the intended target. For building binary files you need run one of the
@@ -91,6 +92,9 @@ of **ZSCU**.
 ### Trouble with build process
 Be attentive to console output when you run any commands - sometimes
 it can give you an answer to your problem.
+
+When building for Windows, make sure you provided correct environment for native modules building. 
+
 One of the frequent issues is outdated version of Node.js and npm.
 You may update them by running `npm install -g npm` and `npm install
 -g node` respectively.
